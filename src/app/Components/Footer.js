@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="mx-auto">  
           {/* Top section with logo, links, and social icons */}
           <div className="flex flex-col md:flex-row items-start mt-4 md:mt-12 md:mb-12"> 
-            {/* Logo */}
+            {/* footer Logo */}
             <div className="mb-8 ml-2 md:mb-0 md:ml-6">
               <Image
-                src="/images/Growtoken.svg"
+                src="/Images/Growtoken.svg"
                 alt="Logo"
                 width={174}
                 height={20}

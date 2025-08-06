@@ -10,10 +10,10 @@ const Navbar = () => {
         <div className="flex justify-center md:justify-between px-7 pt-8 mx-auto items-center md:items-end relative
          md:w-[1,440px] md:h-[80px] md:px-25 md:pt-0">
           
-          {/* Logo */}
+          {/* nav Logo */}
           <div className="flex">
             <Image
-              src="/images/Growtoken.svg"
+              src="/Images/Growtoken.svg"
               alt="Logo"
               width={30}
               height={10}

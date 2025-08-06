@@ -11,7 +11,7 @@ const Ourservices = () => {
              Our Services
              </h3>
          {/* flex items*/}
-        <div className='flex flex-row mx-auto justify-center gap-25 overflow-hidden 
+        <div className='flex flex-row mx-auto justify-center gap-25 text-[#000019] overflow-hidden 
         px-4 md:gap-20 md:px-0 md:overflow-visible
          md:w-[1040px] md:h-[272px]'>
       {/* item 1 */}
@@ -24,7 +24,7 @@ const Ourservices = () => {
         height="36"
         className='mt-10'
         />
-        <p className='text-[16px] text-center w-[174px]'>
+        <p className='text-[16px] text-center w-[174px] '>
           We locate Agricultural investments all around the globe
         </p>        
     </div>
