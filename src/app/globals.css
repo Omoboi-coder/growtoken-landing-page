@@ -1,11 +1,21 @@
+/* Import Inter font from Google Fonts - Must be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-growtoken-dark: #000019;
+  --color-growtoken-orange: #F18500;
+  --gradient-feature:linear-gradient(0.52deg, rgba(0, 0, 25, 0.36) 13.93%, rgba(204, 204, 255, 0.08) 102.99%); 
+  --gradient-contact:linear-gradient(180deg, #000019 0%, #3C3C84 89.8%);
+  --gradient-footer:  linear-gradient(0deg, #000019 22.56%, rgba(0, 0, 102, 0.74) 100%);
+  --gradient-contact-mobile:  linear-gradient(180deg, #000019 1.78%, rgba(60, 60, 132, 0.8) 94.67%);
+  --gradient-footer-mobile: linear-gradient(0deg, #000019 15.05%, rgba(60, 60, 132, 0.8) 95.14%);
 }
 
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -22,5 +32,35 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom gradient classes */
+.bg-feature-gradient {
+  background: var(--gradient-feature);
+}
+
+.bg-growtoken-dark{
+  background:var(--color-growtoken-dark);
+}
+
+.bg-contact-gradient{
+  background: var(--gradient-contact);
+}
+
+.bg-footer-gradient{
+  background: var(--gradient-footer);
+}
+
+.bg-contact-mobile{
+  background: var(--gradient-contact-mobile);
+}
+
+.bg-footer-mobile{
+  background: var(--gradient-footer-mobile);
+}
+
