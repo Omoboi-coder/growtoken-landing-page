@@ -4,9 +4,9 @@ import Image from 'next/image'
 const Testimonials = () => {
   return (
     <>
-    <section id='testimonials'>
+    <section id='testimonials' className='bg-growtoken-dark'>
         {/* flex container */}
-        <div className='flex flex-col text-white bg-growtoken-dark px-4 py-6 mx-auto md:px-0 md:py-0 
+        <div className='flex flex-col text-white px-4 py-6 mx-auto md:px-0 md:py-0 
         md:[] lg:w-[84.4rem] 2xl:w-[90rem] md:h-[420px]'>
             <h3 className='text-[20px] md:text-[24px] ml-8 md:pl-15 py-5'>
                 Testimonials

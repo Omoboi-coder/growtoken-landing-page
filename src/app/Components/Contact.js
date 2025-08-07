@@ -4,9 +4,9 @@ import Image from 'next/image'
 const Contact = () => {
   return (
     <>
-    <section id='contacts'>
+    <section id='contacts' className='bg-contact-mobile md:bg-contact-gradient'>
            {/*main container */}
-          <div className='mx-auto bg-contact-mobile md:bg-contact-gradient h-[632px]
+          <div className='mx-auto  h-[632px]
            md:flex-row  lg:w-[84.4rem] 2xl:w-[90rem] md:h-[449px]'>
              <h3 className='text-white text-[20px] pl-12 pt-6 md:text-[24px] md:pt-0 md:pl-25'>
             Contact

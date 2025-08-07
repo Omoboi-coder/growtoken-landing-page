@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <>
       {/* Nav bar container */}
-      <nav>
+      <nav className='bg-growtoken-dark'>
         {/* Flex container */}
-        <div className="flex justify-center relative bg-growtoken-dark md:justify-between px-7 pt-8 mx-auto items-center md:items-end 
+        <div className="flex justify-center relative  md:justify-between px-7 pt-8 mx-auto items-center md:items-end 
          sm:w-[390px] md:w-[756px] lg:w-[84.4rem] 2xl:w-[90rem] md:h-[80px] md:px-10 lg:px-25 md:pt-0">
           
           {/* nav Logo */}

@@ -4,9 +4,9 @@ import Image from 'next/image'
 const Features = () => {
   return (
     <>
-    <section id='features'>
+    <section id='features' className='bg-growtoken-dark'>
         {/* flex container */}
-        <div className='flex flex-col px-4 py-6 mx-auto bg-growtoken-dark md:gap-[8rem] md:flex-row
+        <div className='flex flex-col px-4 py-6 mx-auto md:gap-[8rem] md:flex-row
         md:[] lg:[84.4rem] 2xl:w-[90rem] md:h-[620px] md:px-0 md:py-0 md:bg-feature-gradient' > 
             <h3 className='text-white text-[20px] font-bold ml-8 w-[107px] h-[31px] mb-6 
             md:ml-25 md:my-4 md:text-[24px] md:mb-0'>

@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <>
     {/* Hero section */}
-    <section id='hero'>
+    <section id='hero' className='bg-[var(--color-growtoken-dark)]'>
         {/* flex container */}
-       <div className='flex flex-col bg-[var(--color-growtoken-dark)] mx-auto lg:w-[84.4rem] 2xl:w-[90rem] 
+       <div className='flex flex-col mx-auto lg:w-[84.4rem] 2xl:w-[90rem] 
        px-7 py-8 md:px-0 md:py-0 md:flex-row md:h-[680px]'>
 
             {/* Content Container */}

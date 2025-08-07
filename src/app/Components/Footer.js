@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <>
       <section 
-        id='footer'>
+        id='footer' className='bg-footer-mobile md:bg-footer-gradient'>
         {/* Main container */}
-        <div className="mx-auto w-full h-[632px] md:h-[400px] px-6 py-8 bg-footer-mobile md:bg-footer-gradient lg:w-[84.4rem] 2xl:w-[90rem] ">  
+        <div className="mx-auto w-full h-[632px] md:h-[400px] px-6 py-8 lg:w-[84.4rem] 2xl:w-[90rem] ">  
           {/* Top section with logo, links, and social icons */}
           <div className="flex flex-col md:flex-row items-start mt-4 md:mt-12 md:mb-12"> 
             {/* footer Logo */}
