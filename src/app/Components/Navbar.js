@@ -37,8 +37,8 @@ const Navbar = () => {
               <a href="#" className="text-white hover:text-red-500">Hashgraph</a>
               <a href="#" className="text-white hover:text-red-500">About Us</a>
             </div>
-            <button className="bg-white text-[var(--color-growtoken-orange)] px-6 py-1 rounded-md hover:bg-white 
-               border-2 border-transparent cursor-pointer md:flex">
+            <button className="hidden md:flex bg-white text-[var(--color-growtoken-orange)] px-6 py-1 rounded-md hover:bg-white 
+               border-2 border-transparent cursor-pointer">
                 Get Started
               </button>
         </div>
