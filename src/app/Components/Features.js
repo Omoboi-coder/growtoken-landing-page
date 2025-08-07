@@ -6,10 +6,10 @@ const Features = () => {
     <>
     <section id='features'>
         {/* flex container */}
-        <div className='flex flex-col px-4 py-6 bg-growtoken-dark md:gap-[5rem] md:flex-row md:w-[1,440px] md:h-[620px] 
-        md:px-0 md:py-0 md:bg-feature-gradient' > 
-            <h3 className='text-white text-[20px] font-bold ml-4 w-[107px] h-[31px] mb-6 
-            md:ml-10 md:my-4 md:text-[24px] md:mb-0'>
+        <div className='flex flex-col px-4 py-6 mx-auto bg-growtoken-dark md:gap-[8rem] md:flex-row
+        md:[] lg:[84.4rem] 2xl:w-[90rem] md:h-[620px] md:px-0 md:py-0 md:bg-feature-gradient' > 
+            <h3 className='text-white text-[20px] font-bold ml-8 w-[107px] h-[31px] mb-6 
+            md:ml-25 md:my-4 md:text-[24px] md:mb-0'>
                 Features
             </h3>   
             

@@ -5,14 +5,13 @@ const Footer = () => {
   return (
     <>
       <section 
-        id='footer' 
-        className='w-full h-[632px] md:h-[400px] px-6 py-8 bg-footer-mobile md:bg-footer-gradient'>
+        id='footer'>
         {/* Main container */}
-        <div className="mx-auto">  
+        <div className="mx-auto w-full h-[632px] md:h-[400px] px-6 py-8 bg-footer-mobile md:bg-footer-gradient lg:w-[84.4rem] 2xl:w-[90rem] ">  
           {/* Top section with logo, links, and social icons */}
           <div className="flex flex-col md:flex-row items-start mt-4 md:mt-12 md:mb-12"> 
             {/* footer Logo */}
-            <div className="mb-8 ml-2 md:mb-0 md:ml-6">
+            <div className="mb-8 ml-4 md:mb-0 md:ml-15">
               <Image
                 src="/Images/Growtoken.svg"
                 alt="Logo"
@@ -22,7 +21,7 @@ const Footer = () => {
               />
             </div>
             {/* Navigation Links */}
-            <div className='flex flex-col text-white text-[16px] gap-4 mb-4 ml-4 md:ml-[10rem] md:mb-0'>
+            <div className='flex flex-col text-white text-[16px] gap-4 mb-4 ml-4 md:ml-[8rem] 2xl:ml-[11rem] md:mb-0'>
               <a href='#' className='hover:text-gray-300 transition-colors'>Impact</a>
               <a href='#' className='hover:text-gray-300 transition-colors'>Hashgraph</a>
               <a href='#' className='hover:text-gray-300 transition-colors'>News</a>
@@ -68,11 +67,12 @@ const Footer = () => {
               />
             </div>
           </div>
-        </div>
-         {/* Bottom section with copyright*/}   
+           {/* Bottom section with copyright*/}   
               <div className='flex justify-center mt-20 md:mt-28 text-white text-[14px]'>
                 <p>© 2023 GROWTOKEN All Rights Reserved.</p>
               </div>
+        </div>
+        
       </section>
     </>
   )

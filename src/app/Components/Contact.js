@@ -4,12 +4,15 @@ import Image from 'next/image'
 const Contact = () => {
   return (
     <>
-    <section id='contacts' className='h-[632px] bg-contact-mobile md:bg-contact-gradient md:w-[1,440px] md:h-[449px]'>
-        <h3 className='text-white text-[20px] pl-8 pt-6 md:text-[24px] md:pt-0 md:pl-15'>
+    <section id='contacts'>
+           {/*main container */}
+          <div className='mx-auto bg-contact-mobile md:bg-contact-gradient h-[632px]
+           md:flex-row  lg:w-[84.4rem] 2xl:w-[90rem] md:h-[449px]'>
+             <h3 className='text-white text-[20px] pl-12 pt-6 md:text-[24px] md:pt-0 md:pl-25'>
             Contact
          </h3>
-           {/*flex container */}
-          <div className='flex flex-col gap-4 mx-auto md:mx-0 md:gap-15 pl-10 md:pl-[19rem] md:flex-row'>
+         {/* flex container */}
+         <div className='flex flex-col ml-[3rem] w-fit lg:ml-[20rem] 2xl:ml-[23rem] gap-[1rem] lg:gap-[35px] md:flex-row'>
          {/* container 1*/}
          <div className='flex flex-col'>
          {/* Name div */}
@@ -60,7 +63,7 @@ const Contact = () => {
             
         <div className='flex flex-col gap-5 md:flex-row'>
             {/* container 2 */}
-         <div className='hidden md:flex md:flex-row'>
+         <div className='hidden md:flex md:flex-row '>
            <Image
            src="/Images/Line 3.svg"
            alt=''
@@ -84,6 +87,7 @@ const Contact = () => {
             Send
         </div>
       </div>
+    </div>
      </div>
     </div>
     </section>

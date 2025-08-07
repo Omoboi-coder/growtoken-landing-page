@@ -6,8 +6,8 @@ const Ourservices = () => {
     <>
     <section id='our services'>
         {/* flex container */}
-        <div className=' bg-[var(--color-growtoken-dark)] md:w-[1,440px] md:h-[614px]'>
-            <h3 className='text-white text-[20px] pl-8 py-6 font-bold md:text-[24px] md:pl-20 '>
+        <div className=' bg-[var(--color-growtoken-dark)] mx-auto lg:w-[84.4rem] 2xl:w-[90rem] md:h-[614px]'>
+            <h3 className='text-white text-[20px] pl-8 py-6 font-bold md:text-[24px] md:pl-25 '>
              Our Services
              </h3>
          {/* flex items*/}

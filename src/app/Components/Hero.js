@@ -5,14 +5,15 @@ const Hero = () => {
   return (
     <>
     {/* Hero section */}
-    <section id='hero' className='bg-[var(--color-growtoken-dark)]'>
+    <section id='hero'>
         {/* flex container */}
-        <div className='flex flex-col px-7 py-8 md:w-[1,440px] md:h-[680px] md:px-0 md:py-0 md:flex-row'>
-            
+       <div className='flex flex-col bg-[var(--color-growtoken-dark)] mx-auto lg:w-[84.4rem] 2xl:w-[90rem] 
+       px-7 py-8 md:px-0 md:py-0 md:flex-row md:h-[680px]'>
+
             {/* Content Container */}
-            <div className='md:py-[10rem] md:px-[12rem] md:w-[40rem]'>
-                <h1 className='font-extrabold text-[24px] text-center text-white mb-6 md:text-[51px] md:text-left
-                 md:w-[745px] md:h[146px] md:mb-0'>
+            <div className='md:py-[10rem] md:pl-20 lg:px-[12rem] md:w-[30rem] lg:w-[40rem]'>
+                <h1 className='font-extrabold text-[24px] text-center text-white mb-6 md:text-[30px] lg:text-[51px] md:text-left
+                 md:w-[450px] lg:w-[745px] md:h-[146px] md:mb-0'>
                     The Future Of Agricultural Investment Is Here
                 </h1>
                 
