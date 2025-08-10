@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -39,10 +40,13 @@ const Hero = () => {
                 
                 <div className='flex flex-row gap-4 items-center justify-center md:flex-row md:gap-4 
                  mt-10 md:mt-2 md:w-[20rem] md:justify-start'>
+                    
+                    <Link href="/home">
                     <button className="bg-white text-[var(--color-growtoken-orange)] px-6 py-0 md:py-2 rounded-md hover:bg-white 
                     border-2 border-transparent cursor-pointer">
                     Get Started
                     </button>
+                    </Link>
                     
                     <button className="flex text-[var(--color-growtoken-orange)] px-6 py-0 md:py-2 rounded-md hover:bg-white 
                     border-2 border-transparent cursor-pointer">
