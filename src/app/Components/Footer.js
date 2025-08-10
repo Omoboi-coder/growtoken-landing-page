@@ -68,14 +68,24 @@ const Footer = () => {
             </div>
           </div>
            {/* Bottom section with copyright*/}   
-              <div className='flex justify-center mt-20 md:mt-28 text-white text-[14px]'>
-                <p>© 2023 GROWTOKEN All Rights Reserved.</p>
-              </div>
+              <div className='flex flex-row text-[12px] font-medium text-white w-[268px] h-[20px] gap-2
+               items-end mx-auto mt-20 md:mt-25 '>
+                    <Image
+                    src="/Images/Vector (5).svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    className='w-[20px] h-[20px]'
+                    />
+                    <p> 2023 </p>
+                    <p> GROWTOKEN </p>
+                    <p> All Rights Reserved </p>   
+            </div>
         </div>
-        
       </section>
     </>
   )
 }
 
 export default Footer
+

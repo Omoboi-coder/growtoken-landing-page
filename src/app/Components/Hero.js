@@ -7,8 +7,7 @@ const Hero = () => {
     {/* Hero section */}
     <section id='hero' className='bg-[var(--color-growtoken-dark)]'>
         {/* flex container */}
-       <div className='flex flex-col mx-auto lg:w-[84.4rem] 2xl:w-[90rem] 
-       px-7 py-8 md:px-0 md:py-0 md:flex-row md:h-[680px]'>
+       <div className='flex flex-col mx-auto lg:w-[84.4rem] 2xl:w-[90rem] px-7 py-8 md:px-0 md:py-0 md:flex-row md:h-[680px]'>
 
             {/* Content Container */}
             <div className='md:py-[10rem] md:pl-20 lg:px-[12rem] md:w-[30rem] lg:w-[40rem]'>

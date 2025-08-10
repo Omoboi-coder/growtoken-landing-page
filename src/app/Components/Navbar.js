@@ -31,10 +31,12 @@ const Navbar = () => {
               <Link href="#" className="text-white hover:text-red-500">Hashgraph</Link>
               <Link href="#" className="text-white hover:text-red-500">About Us</Link>
             </div>
+            <Link href="/home">
             <button className="hidden md:flex bg-white text-[var(--color-growtoken-orange)] px-6 py-1 rounded-md hover:bg-white 
                border-2 border-transparent cursor-pointer">
                 Get Started
               </button>
+            </Link>
         </div>
       </nav>
     </>
