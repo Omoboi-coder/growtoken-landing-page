@@ -8,7 +8,7 @@ const DashboardLayout = ({ children }) => {
      <section className='bg-[#CCCCFF]'>
             {/* Mobile navbar - only shows on small screens */}
       <nav className='md:hidden bg-growtoken-dark'>
-        <div className='flex justify-center px-7 pt-8 pb-4'>
+        <div className='flex justify-center px-7 pt-6 pb-4'>
           {/* Logo */}
           <Image
             src="/Images/Growtoken.svg"

@@ -201,11 +201,11 @@ const RightInvest = () => {
             className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] mx-auto md:absolute 
             md:top-7 md:left-4 mb-4 md:mb-0"
             /> 
-            <div className='flex flex-col w-full md:absolute md:w-[260px] h-[44px] md:left-[16rem] md:top-12'>
-                <h6 className='text-[#000019] text-[18px] md:text-[20px] font-medium text-center md:text-left'>
+            <div className='flex flex-col w-full md:absolute md:w-[260px] h-[44px] text-[#000019] md:left-[16rem] md:top-12'>
+                <h6 className=' text-[18px] md:text-[20px] font-medium text-center md:text-left'>
                     Garri Processing Investment</h6>
-                <p className='text-[12px] text-center md:text-left'><span className='text-green-500'>20%</span>
-                 returns in 6 months</p>
+                <p className='text-[12px] text-center md:text-left'> <span className='text-green-500'>20%</span> 
+                  returns in 6 months</p>
             </div>
 
              <div className='flex flex-row w-full md:absolute md:w-[190px] h-[42px] text-[#010101] 

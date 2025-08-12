@@ -15,11 +15,11 @@ const SidebarMenu = () => {
        
         {/* hamburger icon */}
         {!menuOpen && (
-          <button onClick={toggleMenu} className="block md:hidden mt-4 focus:outline-none">
+          <button onClick={toggleMenu} className="block md:hidden mt-2 focus:outline-none">
            <Image src="/Images/MENU.svg" 
            alt="Menu"
-            width={24}
-             height={24} />
+            width={30}
+             height={30} />
           </button>
         )}
       </div>
@@ -28,7 +28,7 @@ const SidebarMenu = () => {
       {menuOpen && (
         <>
           {/* Slide-out menu */}
-          <div className="absolute top-0 right-0 w-2/3 min-h-screen bg-growtoken-dark shadow-lg z-50
+          <div className="fixed top-0 right-0 w-2/3 min-h-screen bg-growtoken-dark shadow-lg z-50
            flex flex-col pt-8 px-8 space-y-10 text-lg font-semibold 
            transition duration-300 ease-in-out">
             {/* Close icon inside the menu */}
@@ -37,8 +37,8 @@ const SidebarMenu = () => {
                 <Image
                   src="/Images/icon-menu-close.svg"
                   alt="Close menu"
-                  width={35}
-                  height={35}
+                  width={28}
+                  height={28}
                 />
               </button>
             </div>
