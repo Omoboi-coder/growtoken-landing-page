@@ -36,7 +36,7 @@ const FirstInvestment = () => {
     
                       {/* Mobile Second Row */}
                       <div className='bg-white relative h-[60px] p-2 rounded-[20px]'>
-                        <div className='flex flex-row justify-between ml-4 text-[14px] w-[600px] h-[48px]'>
+                        <div className='flex flex-row justify-between ml-4 text-[14px] text-[#000019] w-[600px] h-[48px]'>
                           <div className='flex flex-col space-y-1 justify-center w-[200px] h-[48px]'>
                             <p className='text-[14px]'> 
                               Sugar-Cane Farm Investment
@@ -63,7 +63,7 @@ const FirstInvestment = () => {
     
                       {/* Mobile Third Row */}
                       <div className='bg-white relative h-[60px] p-2 rounded-[20px]'>
-                        <div className='flex flex-row justify-between ml-4 text-[14px] w-[600px] h-[48px]'>
+                        <div className='flex flex-row justify-between ml-4 text-[14px] text-[#000019] w-[600px] h-[48px]'>
                           <div className='flex flex-col space-y-1 justify-center w-[200px] h-[48px]'>
                             <p className='text-[14px]'> 
                               Sugar Processing Investment
@@ -90,7 +90,7 @@ const FirstInvestment = () => {
     
                       {/* Mobile Fourth Row */}
                       <div className='bg-white relative h-[60px] p-2 rounded-[20px]'>
-                        <div className='flex flex-row justify-between ml-4 text-[14px] w-[600px] h-[48px]'>
+                        <div className='flex flex-row justify-between ml-4 text-[14px] text-[#000019] w-[600px] h-[48px]'>
                           <div className='flex flex-col space-y-1 justify-center w-[200px] h-[48px]'>
                             <p className='text-[14px]'> 
                               Cassava Farm Investment
@@ -117,7 +117,7 @@ const FirstInvestment = () => {
     
                       {/* Mobile Fifth Row */}
                       <div className='bg-white relative h-[60px] p-2 rounded-[20px]'>
-                        <div className='flex flex-row justify-between ml-4 text-[14px] w-[600px] h-[49px]'>
+                        <div className='flex flex-row justify-between ml-4 text-[14px] text-[#000019] w-[600px] h-[49px]'>
                           <div className='flex flex-col space-y-1 justify-center w-[200px] h-[48px]'>
                             <p className='text-[14px]'> 
                               Farm Health Insurance
