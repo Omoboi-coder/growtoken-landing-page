@@ -35,7 +35,7 @@ const SidebarMenu = () => {
             <div className="flex justify-end mb-20">
               <button onClick={toggleMenu} className="focus:outline-none">
                 <Image
-                  src="/images/icon-menu-close.svg"
+                  src="/Images/icon-menu-close.svg"
                   alt="Close menu"
                   width={35}
                   height={35}
