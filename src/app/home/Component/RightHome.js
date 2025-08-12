@@ -8,9 +8,9 @@ const RightHome = () => {
          {/* container 2 */}
         <div className='flex flex-col'>
         {/* Row 1 */}
-        <div className='flex flex-row relative'>
+        <div className='flex flex-col md:flex-row relative'>
         {/* item 1 */}
-        <div className='flex w-[310px] h-[120px] rounded-[12px] mt-[135px] border-1 border-[#00004C]'>
+        <div className='flex w-[310px] h-[120px] rounded-[12px] mx-auto md:mx-0 mt-10 md:mt-[135px] border border-[#00004C]'>
           <div className='flex flex-row mx-auto mt-4 gap-2 w-[241px] h-[26px] font-semibold text-[#010101] '>
             <p className='pt-1 text-[16px]'>
               Total Balance:
@@ -22,7 +22,7 @@ const RightHome = () => {
         </div>
 
           {/* item 2 */}
-        <div className='flex w-[310px] h-[120px] rounded-[12px] mt-[135px] ml-5 border-1 border-[#00004C]'>
+        <div className='flex w-[310px] h-[120px] rounded-[12px] mt-2 md:mt-[135px] mx-auto md:ml-5 border-1 border-[#00004C]'>
           <div className='flex flex-row mx-auto mt-4 gap-2 w-[221px] h-[26px] font-semibold text-[#010101] '>
             <p className='pt-1 text-[16px]'>
               Total Spent:
@@ -33,7 +33,7 @@ const RightHome = () => {
           </div>
         </div>
         {/* item 3 */}
-        <div className='flex w-[220px] h-[240px] rounded-[12px] mt-[80px] ml-20 border-1 border-[#00004C]'>
+        <div className='flex w-[220px] h-[240px] rounded-[12px] mt-2 md:mt-[80px] mx-auto md:ml-20 border-1 border-[#00004C]'>
          <div className='flex flex-col mx-auto mt-4 items-center font-semibold text-[#010101] '>
            <p className='text-[12px]'>
               Token Allocation
@@ -86,7 +86,7 @@ const RightHome = () => {
       </div>
         
         {/* Row 2 */}
-        <div className='flex flex-row absolute top-[18rem] p-[4px] gap-[4px] ml-10 text-center items-center
+        <div className='flex flex-row md:absolute md:top-[18rem] p-[4px] gap-[4px] mx-auto md:ml-10 mt-4 md:mt-0 text-center items-center
          w-[224px] h-[40px] bg-[#FEF3E5] rounded-[16px] border-[#FEF3E5]'>
           <p className='text-[#F18500] text-[16px] font-medium pt-1 w-[106px] h-[32px]'>
             Overview
@@ -96,8 +96,10 @@ const RightHome = () => {
             Portfolio
           </p>  
         </div>
+
         <RightHomeRow3 />
-         <footer className='flex flex-row text-[12px] text-[#010101] w-[268px] h-[20px] gap-2 items-end mt-5 ml-[18rem]'>
+        
+         <footer className='flex flex-row text-[12px] text-[#010101] w-[268px] h-[20px] gap-2 items-end mt-5 mb-5 md:mb-0 mx-auto md:ml-[18rem]'>
         <Image
           src="/Images/Vector (4).svg"
           alt=""

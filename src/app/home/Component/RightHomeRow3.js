@@ -5,9 +5,9 @@ const RightHomeRow3 = () => {
   return (
     <>
        {/* Row 3 */}
-        <div className=' flex flex-row w-[1080px] h-[600px] rounded-[12px] bg-[#00004C] mt-5 gap-20'>
+        <div className='flex flex-row w-[265px] md:w-[1065px] h-[600px] rounded-[12px] bg-[#00004C] mx-auto md:mx-0 mt-5 gap-20'>
           {/* Left item */}
-          <div className=' flex flex-col w-[240px] h-[670px] mt-3 '>
+          <div className=' flex flex-col w-[240px] min-h-full md:h-[670px] mt-3 '>
             <h4 className='text-[16px] text-white pt-2 pl-4'>
               Investments
 
@@ -146,8 +146,8 @@ const RightHomeRow3 = () => {
           </div>
 
           {/* Right item */}
-          <div className='flex flex-col'>
-          <div className='flex flex-row justify-between w-[686px] h-[29px] mt-4 items-end'>
+          <div className='hidden md:flex flex-col'>
+          <div className='flex flex-row justify-between  w-[686px] h-[29px] mt-4 items-end'>
             <h4 className='text-white'>
               Investment Growth
             </h4>
