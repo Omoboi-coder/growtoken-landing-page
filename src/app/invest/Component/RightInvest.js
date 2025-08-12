@@ -198,7 +198,8 @@ const RightInvest = () => {
             alt=''
             width="200"
             height="200"
-            className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] mx-auto md:absolute md:top-7 md:left-4 mb-4 md:mb-0"
+            className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] mx-auto md:absolute 
+            md:top-7 md:left-4 mb-4 md:mb-0"
             /> 
             <div className='flex flex-col w-full md:absolute md:w-[260px] h-[44px] md:left-[16rem] md:top-12'>
                 <h6 className='text-[#000019] text-[18px] md:text-[20px] font-medium text-center md:text-left'>
