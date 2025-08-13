@@ -37,7 +37,7 @@ const RightHomeRow3 = () => {
                           alt=''
                           width="88"
                           height="15"
-                          className='w-[95px] md:w-[88px] h-[12px] md:h-[15px]'
+                          className='w-[95px] md:w-[88px] h-[20px] md:h-[15px]'
                           />
                         </div>
                       </div>
