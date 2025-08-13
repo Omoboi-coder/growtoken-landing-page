@@ -86,8 +86,10 @@ const RightHome = () => {
       </div>
         
         {/* Row 2 */}
-        <div className='flex flex-row md:absolute md:top-[18rem] p-[4px] gap-[4px] mx-auto md:ml-10 mt-4 md:mt-0 text-center items-center
-         w-[224px] h-[40px] bg-[#FEF3E5] rounded-[16px] border-[#FEF3E5]'>
+        <div className='px-5 md:px-0'>
+        <div className='flex flex-row md:absolute md:top-[18rem] p-[4px] gap-[4px]
+         md:ml-10 mt-4 md:mt-0 text-center  justify-between w-full md:w-[224px] h-[40px] bg-[#FEF3E5] 
+         rounded-[16px] border-[#FEF3E5]'>
           <p className='text-[#F18500] text-[16px] font-medium pt-1 w-[106px] h-[32px]'>
             Overview
           </p>
@@ -96,10 +98,12 @@ const RightHome = () => {
             Portfolio
           </p>  
         </div>
+      </div>
 
         <RightHomeRow3 />
         
-         <footer className='flex flex-row text-[12px] text-[#010101] w-[268px] h-[20px] gap-2 items-end mt-5 mb-5 md:mb-0 mx-auto md:ml-[18rem]'>
+         <footer className='flex flex-row text-[12px] text-[#010101] w-[268px] h-[20px]
+          gap-2 items-end mt-5 mb-5 md:mb-0 mx-auto md:ml-[18rem]'>
         <Image
           src="/Images/Vector (4).svg"
           alt=""

@@ -25,7 +25,7 @@ const RightActivity = () => {
           <div className='w-full max-w-[970px] md:w-[970px] md:h-[840px] mt-4 mx-auto md:mx-0'>
              {/* Activity 1 */}
             <div className='w-full max-w-[754px] md:w-[754px] md:h-[393px] mx-auto mt-4'>
-              <div className='flex flex-row w-full  max-w-[729px] md:w-[729px] h-[29px] mb-3 justify-between px-2 md:px-0'>
+              <div className='flex flex-row w-full max-w-[729px] md:w-[729px] h-[29px] mb-3 justify-between px-2 md:px-0'>
                 <p className='mt-2 text-[#000019]'>
                   Today
                 </p>
