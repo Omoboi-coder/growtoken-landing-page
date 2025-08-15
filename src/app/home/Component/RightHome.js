@@ -103,7 +103,7 @@ const RightHome = () => {
         <RightHomeRow3 />
         
          <footer className='flex flex-row text-[12px] text-[#010101] w-[268px] h-[20px]
-          gap-2 items-end mt-5 mb-5 md:mb-0 mx-auto md:ml-[18rem]'>
+          gap-2 items-end md:mt-5 my-10 md:my-0 mx-auto md:ml-[18rem]'>
         <Image
           src="/Images/Vector (4).svg"
           alt=""

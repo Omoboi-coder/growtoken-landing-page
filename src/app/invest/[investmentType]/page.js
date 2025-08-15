@@ -52,7 +52,7 @@ const InvestmentType = ({ params }) => {
              
               {/* Main content */}
               <div className='flex flex-col w-full md:w-[1011px] h-auto md:h-[640px] bg-[#000019] rounded-[12px]
-               mx-auto pb-3 md:pb-0 mt-6 md:mt-12'>
+               mx-auto pb-5 md:pb-0 mt-6 md:mt-12'>
                 {/* content 1 */}
                    <div className='flex flex-col md:flex-row relative w-full md:w-[589px] text-white
                            md:h-[102px] h-auto ml-0 md:ml-35 mt-0 md:mt-15 p-4 md:p-0'>
@@ -169,7 +169,7 @@ const InvestmentType = ({ params }) => {
             </div>
              {/* Footer */}
                   <footer className='flex flex-row text-[12px] text-[#010101] w-full max-w-[268px] h-[20px]
-                   gap-2 items-center justify-center md:justify-start my-5 md:my-0 md:mt-15 mx-auto md:ml-[17rem]'>
+                   gap-2 items-center justify-center md:justify-start my-10 md:my-0 md:mt-15 mx-auto md:ml-[17rem]'>
                       <Image
                       src="/Images/Vector (4).svg"
                       alt=""

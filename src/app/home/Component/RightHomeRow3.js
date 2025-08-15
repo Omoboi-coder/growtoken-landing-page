@@ -7,7 +7,7 @@ const RightHomeRow3 = () => {
        {/* Main container Row 3 */}
        <div className='px-4 md:px-0'>
         <div className='flex flex-row w-full md:w-[1065px] h-[600px] rounded-[12px] bg-[#00004C] 
-        mt-5 gap-4 md:gap-20 justify-center md:justify-start p-4 md:p-0'>
+        mt-5 gap-4 md:gap-20 justify-center md:justify-start px-4 pb-20 md:pb-0 md:px-0'>
           {/* Left item */}
           <div className='flex flex-col w-full md:w-[240px] min-h-full md:h-[670px] mt-3'>
               <h4 className='text-[20px] md:text-[16px] text-white pt-2 pl-4 md:pl-4'>

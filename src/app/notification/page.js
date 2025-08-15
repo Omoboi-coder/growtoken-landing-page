@@ -141,7 +141,7 @@ const Notification = () => {
               </div>
                {/* Footer */}
             <footer className='flex flex-row text-[12px] text-[#010101] w-full max-w-[268px] h-[20px]
-                gap-2 items-center justify-center md:justify-start my-8 md:my-0 md:mt-12 mx-auto md:ml-[18rem]'>
+                gap-2 items-center justify-center md:justify-start my-15 md:my-0 md:mt-12 mx-auto md:ml-[18rem]'>
                 <Image
                 src="/Images/Vector (4).svg"
                 alt=""
