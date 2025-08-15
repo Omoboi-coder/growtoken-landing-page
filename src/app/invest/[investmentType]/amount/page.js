@@ -38,7 +38,7 @@ const AmountOfInvestment = ({ params }) => {
           <div className='flex flex-col md:flex-row w-full md:w-[1011px] min-h-[500px] md:h-[640px] bg-[#000019] 
           rounded-[12px] gap-6 md:gap-20 mx-auto mt-6 md:mt-[3rem] p-6 md:p-0'>
             <h3 className='flex w-full md:w-[316px] text-[24px] md:text-[36px] text-white font-semibold 
-            mt-0 md:mt-[10rem] ml-0 md:ml-[7rem] leading-tight'>
+            mt-3 md:mt-[10rem] ml-0 md:ml-[7rem]'>
               How much would you like to invest in this?
             </h3>
             
@@ -63,7 +63,7 @@ const AmountOfInvestment = ({ params }) => {
               <button 
                 onClick={handleContinueClick}
                 className='w-[100px] md:w-[82px] h-[35px] md:h-[29px] rounded-[8px] 
-                text-[16px] text-white mt-6 ml-auto md:ml-[20rem] bg-[#F18500] hover:bg-[#E07700] 
+                text-[16px] text-white mt-10 md:mt-6 ml-auto md:ml-[20rem] bg-[#F18500] hover:bg-[#E07700] 
                 transition-colors cursor-pointer'>
                 Continue
               </button>
@@ -74,7 +74,7 @@ const AmountOfInvestment = ({ params }) => {
         {/* Footer */}
             {/* Footer */}
                   <footer className='flex flex-row text-[12px] text-[#010101] w-full max-w-[268px] h-[20px]
-                   gap-2 items-center justify-center md:justify-start mt-35 mx-auto md:ml-[18rem]'>
+                   gap-2 items-center justify-center md:justify-start mt-25 md:mt-35 mx-auto md:ml-[18rem]'>
                       <Image
                       src="/Images/Vector (4).svg"
                       alt=""

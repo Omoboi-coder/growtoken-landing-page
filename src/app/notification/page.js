@@ -21,7 +21,7 @@ const Notification = () => {
                 </div>
               </div>
               {/* Notification div */}
-              <div className='flex flex-col w-full md:w-[1030px] h-auto md:h-[800px] gap-3 mt-5 md:mt-10'>
+              <div className='flex flex-col w-full md:w-[1030px] min-h-auto md:h-[800px] gap-3 mt-5 md:mt-10'>
                 {/* notification 1 */}
                 <div className='flex flex-col relative w-full md:w-[1030px] h-auto md:h-[208px] bg-[#000019] rounded-[12px]'>
                     {/* inner div 1 */}
@@ -141,7 +141,7 @@ const Notification = () => {
               </div>
                {/* Footer */}
             <footer className='flex flex-row text-[12px] text-[#010101] w-full max-w-[268px] h-[20px]
-                gap-2 items-center justify-center md:justify-start mt-6 md:mt-12 mx-auto md:ml-[18rem]'>
+                gap-2 items-center justify-center md:justify-start my-8 md:my-0 md:mt-12 mx-auto md:ml-[18rem]'>
                 <Image
                 src="/Images/Vector (4).svg"
                 alt=""
