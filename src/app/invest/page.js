@@ -5,8 +5,7 @@ import RightInvest from './Component/RightInvest'
 const Invest = () => {
   return (
     <DashboardLayout>
-      <RightInvest />
-      
+      <RightInvest />    
     </DashboardLayout>
 
   )

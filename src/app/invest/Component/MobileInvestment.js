@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Investment = () => {
+const MobileInvestment = () => {
   return (
     <>
     {/* Mobile view with horizontal scroll */}
@@ -146,4 +146,4 @@ const Investment = () => {
   )
 }
 
-export default Investment
+export default MobileInvestment

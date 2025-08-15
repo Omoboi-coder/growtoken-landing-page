@@ -90,7 +90,7 @@ const SidebarMenu = () => {
                          height={24}
                          className=" "
                          />
-                         <p className='text-[16px] text-white mt-1.5'>Notification</p>
+                         <Link href="/notification" className='text-[16px] text-white mt-1.5'>Notification</Link>
                       </div>
                     </div>
                     {/* Exist */}
@@ -102,7 +102,7 @@ const SidebarMenu = () => {
                          height={24}
                          className=" "
                          />
-                         <p className='text-[16px] text-[#D61F1F] mt-1.5'>Exist</p>
+                         <Link href="/" className='text-[16px] text-[#D61F1F] mt-1.5'>Exist</Link>
                       </div>
                   </div>
           </div>

@@ -1,8 +1,16 @@
-import React from 'react'
+"use client"
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import Investment from './Investment'
+import MobileInvestment from './MobileInvestment'
 
 const RightInvest = () => {
+
+     const router = useRouter()
+
+  const handleInvestClick = (investmentType) => {
+    // Navigate to dynamic investment page with the investment type as parameter
+    router.push(`/invest/${investmentType.toLowerCase().replace(/\s+/g, '-')}`)
+  }
   return (
     <>
     {/* container 2 */}
@@ -173,7 +181,7 @@ const RightInvest = () => {
             </div>
           </div>
 
-          <Investment />
+          <MobileInvestment/>
         </div>
       </div>
 
@@ -194,7 +202,7 @@ const RightInvest = () => {
         <div className='flex flex-col md:flex-row relative w-full md:w-[618px]
          md:h-[268px] h-full rounded-[12px] bg-white ml-0 md:ml-5 mt-7 p-4 md:p-0'>
             <Image
-            src="/Images/Frame 227.svg"
+            src="/Images/Frame 227.svg" 
             alt=''
             width="200"
             height="200"
@@ -220,9 +228,10 @@ const RightInvest = () => {
                     <p className='text-[12px]'>Investors</p>
                 </div>
             </div>
-
-             <button className='w-[72px] h-[24px] text-white bg-[#F18500] rounded-[8px] 
-             mx-auto md:absolute md:left-[16rem] md:top-[12rem]'>
+              <button 
+               onClick={() => handleInvestClick('Investment Type')}
+               className='w-[72px] h-[24px] text-white bg-[#F18500] rounded-[8px] 
+               mx-auto md:absolute md:left-[16rem] md:top-[12rem] hover:bg-[#E07700] transition-colors cursor-pointer'>
                 Invest
              </button>
         </div>

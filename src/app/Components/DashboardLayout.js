@@ -25,7 +25,7 @@ const DashboardLayout = ({ children }) => {
       </nav>
 
       {/* Main content area */}
-      <div className='flex flex-col md:flex-row mx-auto gap-0 md:gap-4 w-full min-h-screen md:w-[84.4rem] md:h-[1024px]'>
+      <div className='flex flex-col md:flex-row mx-auto gap-0 md:gap-4 w-full min-h-screen md:w-[84.4rem] md:h-[1024px] bg-[#CCCCFF]'>
         
         {/* LeftCon - only shows on desktop */}
         <div className='md:block hidden'>
