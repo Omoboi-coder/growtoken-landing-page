@@ -1,10 +1,36 @@
 'use client'
 import DashboardLayout from '@/app/Components/DashboardLayout'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 
 const ConfirmInvestment = ({ params }) => {
+  const searchParams = useSearchParams()
+  const [investmentData, setInvestmentData] = useState({
+    amount: 5000,
+    processingFee: 100,
+    units: 10,
+    total: 5100
+  })
+
+  useEffect(() => {
+    const amountFromUrl = searchParams.get('amount')
+    if (amountFromUrl && parseFloat(amountFromUrl) > 0) {
+      const amount = parseFloat(amountFromUrl)
+      const processingFee = Math.round(amount * 0.02) // 2% processing fee
+      const units = Math.floor(amount / 500) // 500 USDT = 1 Unit
+      const total = amount + processingFee
+
+      setInvestmentData({
+        amount,
+        processingFee,
+        units,
+        total
+      })
+    }
+  }, [searchParams])
+
   return (
     <DashboardLayout>
       <div className='flex flex-col px-4 md:px-0'>
@@ -53,10 +79,10 @@ const ConfirmInvestment = ({ params }) => {
                 </div>
 
                 <div className='flex flex-col w-full md:w-[120px] text-[16px] space-y-4 md:space-y-5 font-medium'>
-                  <p> 5000 USDT </p>
-                  <p> 100 USDT </p>
-                  <p> 10 Units </p>
-                  <p> 5100 USDT </p>
+                  <p> {investmentData.amount} USDT </p>
+                  <p> {investmentData.processingFee} USDT </p>
+                  <p> {investmentData.units} Units </p>
+                  <p> {investmentData.total} USDT </p>
                 </div>
               </div>
 

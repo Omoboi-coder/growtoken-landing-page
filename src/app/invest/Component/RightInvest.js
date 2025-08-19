@@ -8,7 +8,6 @@ const RightInvest = () => {
      const router = useRouter()
 
   const handleInvestClick = (investmentType) => {
-    // Navigate to dynamic investment page with the investment type as parameter
     router.push(`/invest/${investmentType.toLowerCase().replace(/\s+/g, '-')}`)
   }
   return (

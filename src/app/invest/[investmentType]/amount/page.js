@@ -1,16 +1,29 @@
 'use client'
 import DashboardLayout from '@/app/Components/DashboardLayout'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
 const AmountOfInvestment = ({ params }) => {
   const router = useRouter()
+  const [amount, setAmount] = useState('')
 
   const handleContinueClick = () => {
-    router.push(`/invest/${params.investmentType}/amount/confirm`)
+    if (amount && parseFloat(amount) > 0) {
+      // Pass the amount as a query parameter
+      router.push(`/invest/${params.investmentType}/amount/confirm?amount=${amount}`)
+    } else {
+      alert('Please enter a valid amount')
+    }
   }
+
+  const calculateUnits = (usdtAmount) => {
+    if (!usdtAmount || usdtAmount === '') return 0
+    return Math.floor(parseFloat(usdtAmount) / 500) // 500 USDT = 1 Unit
+  }
+
+  const units = calculateUnits(amount)
 
   return (
     <DashboardLayout>
@@ -43,20 +56,27 @@ const AmountOfInvestment = ({ params }) => {
             </h3>
             
             <div className='flex flex-col relative w-full md:w-auto'>
-              <div className='flex w-full md:w-[392px] h-[60px] md:h-[80px] border border-[#F18500] 
-              rounded-[12px] mt-6 md:mt-[11rem]'>
+              <div className='relative'>
+                <input
+                  type="number"
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
+                  placeholder="Enter amount"
+                  className='w-full md:w-[392px] h-[60px] md:h-[80px] border border-[#F18500] 
+                  rounded-[12px] mt-6 md:mt-[11rem] bg-transparent text-white text-[18px] md:text-[20px] 
+                  px-4 outline-none focus:border-[#F18500] focus:ring-2 focus:ring-[#F18500] focus:ring-opacity-50'
+                />
+                <p className='mb-6 absolute top-[18px] md:top-42 left-2 text-[12px] px-2 bg-[#000019] text-white z-10'>
+                  Amount in Tether USDT
+                </p>
               </div>
-              
-              <p className='mb-6 absolute top-[18px] md:top-42 left-2 text-[12px] px-2 bg-[#000019] text-white z-10'>
-                Amount in Tether USDT
-              </p>
               
               <div className='flex flex-col w-full md:w-[389px] text-white gap-2 rounded-[4px] mt-6 md:mt-9'>
                 <p className='text-[14px] md:text-[16px] leading-relaxed'>
                   The Tether amount specified is converted to units
                 </p>
                 <p className='text-[16px] md:text-[20px] font-medium'>
-                  5000 USDT = 10 Units (500 USDT = 1 Unit)
+                  {amount ? `${amount} USDT = ${units} Units (500 USDT = 1 Unit)` : '5000 USDT = 10 Units (500 USDT = 1 Unit)'}
                 </p>
               </div>
               
@@ -64,7 +84,8 @@ const AmountOfInvestment = ({ params }) => {
                 onClick={handleContinueClick}
                 className='w-[100px] md:w-[82px] h-[35px] md:h-[29px] rounded-[8px] 
                 text-[16px] text-white mt-10 md:mt-6 ml-auto md:ml-[20rem] bg-[#F18500] hover:bg-[#E07700] 
-                transition-colors cursor-pointer'>
+                transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed'
+                disabled={!amount || parseFloat(amount) <= 0}>
                 Continue
               </button>
             </div>
@@ -72,20 +93,19 @@ const AmountOfInvestment = ({ params }) => {
         </div>
         
         {/* Footer */}
-            {/* Footer */}
-                  <footer className='flex flex-row text-[12px] text-[#010101] w-full max-w-[268px] h-[20px]
-                   gap-2 items-center justify-center md:justify-start mt-25 md:mt-35 mx-auto md:ml-[18rem]'>
-                      <Image
-                      src="/Images/Vector (4).svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                      className='w-[20px] h-[20px]'
-                      />
-                      <p>2023</p>
-                      <p>GROWTOKEN</p>
-                      <p>All Rights Reserved</p>   
-                   </footer>
+        <footer className='flex flex-row text-[12px] text-[#010101] w-full max-w-[268px] h-[20px]
+         gap-2 items-center justify-center md:justify-start mt-25 md:mt-35 mx-auto md:ml-[18rem]'>
+          <Image
+            src="/Images/Vector (4).svg"
+            alt=""
+            width="20"
+            height="20"
+            className='w-[20px] h-[20px]'
+          />
+          <p>2023</p>
+          <p>GROWTOKEN</p>
+          <p>All Rights Reserved</p>   
+        </footer>
       </div>
     </DashboardLayout>
   )
